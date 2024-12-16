@@ -4,8 +4,8 @@ on: [pull_request]
 
 jobs:
   lint:
-    uses: ./lint.yml@main
+    uses: andyMrtnzP/browserless-test/.github/workflows/lint.yml@main
 
   automerge:
     needs: [lint]
-    uses: ./merge-dependabot.yml@main
+    uses: andyMrtnzP/browserless-test/.github/workflows/merge-dependabot.yml@main
